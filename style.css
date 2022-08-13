@@ -1,0 +1,38 @@
+body {
+   background: #445760;
+   font-family: 'Roboto', sans-serif;
+}
+.container {
+   width: 450px;
+   margin: 0 auto;
+}
+
+/*----- Font CSS -----*/
+
+#textAnimation {
+   display: inline-block;
+   font-size: 100px;
+   text-align: center;
+   position: relative;
+   text-stroke: 1px #f0a900;
+   -webkit-text-stroke: 1px #f0a900;
+   color: transparent;
+}
+
+#textAnimation::after {
+   content: attr(data-text-anim);
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 0%;
+   height: 100%;
+   overflow: hidden;
+   color: #f0a900;
+   animation: textAnimation 3s ease-in-out infinite;
+}
+
+@keyframes textAnimation {
+   from{width: 0%;} to {width: 100%;}
+}
+
+/*-----End - Font CSS -----*/
