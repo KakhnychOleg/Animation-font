@@ -3,7 +3,7 @@ body {
    font-family: 'Roboto', sans-serif;
 }
 .container {
-   width: 450px;
+   width: 500px;
    margin: 0 auto;
 }
 
@@ -35,4 +35,35 @@ body {
    from{width: 0%;} to {width: 100%;}
 }
 
-/*-----End - Font CSS -----*/
+
+/*----- Second Font ----- */
+
+#textAnimation-2 {
+   font-size: 75px;
+   animation: move 3s infinite;
+   color: #f0a900;
+}
+ 
+@keyframes move {
+   from {
+     margin-left: 100%;
+     width: 300%; 
+   }
+ 
+   to {
+     margin-left: 0%;
+     width: 100%;
+   }
+}
+             
+@-webkit-keyframes move {
+   from {
+     margin-left: 100%;
+     width: 300%; 
+   }
+ 
+   to {
+     margin-left: 0%;
+     width: 100%;
+   }
+}
